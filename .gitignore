@@ -6,7 +6,7 @@ __pycache__/
 trained-models
 papers
 analysis
-runpod
+modal
 
 # Distribution / packaging
 dist/

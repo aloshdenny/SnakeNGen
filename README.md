@@ -7,7 +7,7 @@ It is an educational repo demonstrating how to build a real-time Snake game usin
 
 The goal was to create a similar implementation using Snake game due its simple logic. It took near 2 months of different experiments to get a ready-to-play model.
 
-If you don't have GPU, you can use [runpod.io](runpod.io)(paid service).
+If you don't have GPU, you can use [modal.com](modal.com)(paid service).
 
 ![Model inference](assets/gif-1.gif)
 
@@ -43,7 +43,7 @@ Then start the training:
 python src/train.py --model-type edm --output-prefix models/model --dataset training_data --gen-val-images
 ```
 
-The model was trained on [runpod.io](runpod.io) for 32 epochs, taking approximately 27 hours at a cost of $10.
+The model was trained on [modal.com](modal.com) for 50 epochs on an H100 80GB, taking approximately 14 hours at a cost of ~$64.
 
 ## Inference
 
@@ -54,7 +54,7 @@ git clone https://huggingface.co/juramoshkov/snake-diffusion models
 
 To play the game, either:
 1. Run [Play.ipynb](src/play.ipynb) locally to play Snake at 1 FPS(it depends on your GPU) 🤓
-2. Use [runpod.io](runpod.io):
-   - Deploy a Pod (RTX 4090 recommended for best performance)
-   - Copy and run the contents of scripts/runpod.sh
+2. Use [modal.com](modal.com):
+   - Deploy an Instance (A100 recommended for best performance)
+   - Copy and run the contents of scripts/modal.sh
    - Open [Play.ipynb](src/play.ipynb)
